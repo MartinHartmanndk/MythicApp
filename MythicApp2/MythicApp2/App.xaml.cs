@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MythicApp2.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace MythicApp2
 		{
 			InitializeComponent();
 
-			MainPage = new MythicApp2.MainPage();
+            MainPage = new LoginPage();
 		}
 
 		protected override void OnStart ()
@@ -31,4 +32,5 @@ namespace MythicApp2
 			// Handle when your app resumes
 		}
 	}
+
 }

@@ -15,7 +15,17 @@ namespace MythicApp2.Model
         public User(string UserName, string Password)
         {
             this.UserName = UserName;
-            this.Password = Password;
+            this.Password = Password; 
+        }
+
+        public bool CheckInformation()
+        {
+            if(UserName != null && Password != null && UserName != "" && Password != "")
+            {
+                return true;
+            }
+            else            
+                return false;            
         }
     }
 }
